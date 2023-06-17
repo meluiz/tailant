@@ -8,7 +8,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "release": "changeset publish",
+    "release-dev": "changeset version --snapshot dev && changeset publish --tag dev"
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",
@@ -23,5 +25,9 @@
     "typescript": "^5.1.3"
   },
   "packageManager": "pnpm@7.15.0",
-  "name": "tailant"
+  "name": "tailant",
+  "dependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.1"
+  }
 }
