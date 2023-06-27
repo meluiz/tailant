@@ -66,11 +66,6 @@
   "bugs": {
     "url": "https://github.com/meluiz/tailant/issues"
   },
-  "scripts": {
-    "build": "tsup src --dts",
-    "dev": "pnpm build:fast -- --watch",
-    "build:fast": "tsup src"
-  },
   "devDependencies": {
     "tailwindcss": "^3.3.2"
   }
