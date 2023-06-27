@@ -71,7 +71,7 @@
     "dev": "pnpm build:fast -- --watch",
     "build:fast": "tsup src"
   },
-  "peerDependencies": {
+  "devDependencies": {
     "tailwindcss": "^3.3.2"
   }
 }
