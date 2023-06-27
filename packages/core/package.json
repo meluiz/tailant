@@ -1,6 +1,6 @@
 {
   "name": "@tailant/core",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Tailant core primitives",
   "private": false,
   "license": "MIT",
