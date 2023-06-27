@@ -1,6 +1,6 @@
 {
   "name": "tailant",
-  "private": true,
+  "private": false,
   "packageManager": "pnpm@7.15.0",
   "scripts": {
     "build": "turbo run build",
