@@ -1,0 +1,77 @@
+{
+  "name": "@tailant/core",
+  "version": "0.1.0",
+  "description": "Tailant core primitives",
+  "license": "MIT",
+  "author": {
+    "name": "meluiz",
+    "email": "hi@meluiz.com",
+    "url": "https://meluiz.com"
+  },
+  "contributors": [
+    {
+      "name": "joaom00",
+      "url": "https://jpedromagalhaes.vercel.app/"
+    },
+    {
+      "name": "revogabe",
+      "url": "https://revogabe.vercel.app/"
+    }
+  ],
+  "source": "./src/index.ts",
+  "module": "./dist/index.mjs",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "package.json"
+  ],
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs",
+    "default": "./dist/index.mjs"
+  },
+  "keywords": [
+    "tailant",
+    "tailwind",
+    "tailwindcss",
+    "conflict",
+    "variant",
+    "groups",
+    "props"
+  ],
+  "tags": [
+    "tailant",
+    "tailwind",
+    "tailwindcss",
+    "conflict",
+    "variant",
+    "groups",
+    "props"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16.15.0",
+    "npm": ">=8"
+  },
+  "homepage": "https://github.com/meluiz/tailant#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meluiz/tailant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meluiz/tailant/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "dev": "pnpm build:fast -- --watch",
+    "build:fast": "tsup src"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
