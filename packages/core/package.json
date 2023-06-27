@@ -52,17 +52,18 @@
     "groups",
     "props"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "engines": {
     "node": ">=16.15.0",
     "npm": ">=8"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/meluiz/tailant#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meluiz/tailant.git"
+    "url": "git+https://github.com/meluiz/tailant.git",
+    "directory": "packages/core"
   },
   "bugs": {
     "url": "https://github.com/meluiz/tailant/issues"
