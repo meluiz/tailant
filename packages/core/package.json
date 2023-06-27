@@ -2,6 +2,7 @@
   "name": "@tailant/core",
   "version": "1.0.0",
   "description": "Tailant core primitives",
+  "private": false,
   "license": "MIT",
   "author": {
     "name": "meluiz",
