@@ -12,7 +12,7 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "release": "changeset publish",
-    "release-dev": "changeset version --snapshot dev && changeset publish --tag dev"
+    "release:dev": "changeset version --snapshot dev && changeset publish --tag dev"
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",
