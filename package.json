@@ -1,7 +1,7 @@
 {
   "name": "tailant",
   "description": "A tiny utility for construction conditional CSS classes, with tailwind group variants and merging of identical classes",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "author": {
     "name": "meluiz",
