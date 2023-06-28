@@ -22,8 +22,8 @@ jobs:
           node-version-file: .nvmrc
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
         id: pnpm-install
+        uses: pnpm/action-setup@v2
         with:
           version: 8
           run_install: false
