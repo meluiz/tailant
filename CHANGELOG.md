@@ -1,5 +1,11 @@
 # tailant
 
+## 1.0.0
+
+### Major Changes
+
+- 614c004: `css` Functionality working, `withTailant` function with transformer created.
+
 ## 0.1.0
 
 ### Minor Changes
