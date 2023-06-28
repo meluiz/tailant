@@ -3,8 +3,6 @@ name: Publish
 on:
   workflow_dispatch:
   push:
-    paths:
-      - '.changeset/**'
     branches:
       - main
 
@@ -48,7 +46,7 @@ jobs:
       - name: Create PR or publish to npm
         uses: changesets/action@v1
         with:
-          title: Publish
+          title: Publishing a new version
           commit: Publish
           publish: pnpm ci:publish
         env:
