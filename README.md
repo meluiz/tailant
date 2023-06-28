@@ -86,6 +86,19 @@ return (
 )
 ```
 
+## VSCode IntelliSense autocomplete
+
+You can add these settings on your user config:
+
+```json
+"editor.quickSuggestions": {
+  "strings": true
+},
+"tailwindCSS.experimental.classRegex" : [
+  ["css\\((.*)\\)", "(?:'|\"|`)([^\"'`]*)(?:'|\"|`)"]
+],
+```
+
 ## Acknowledgements
 
 - [**Tailwind Merge**](https://github.com/joe-bell/cva) ([Dany Castillo](https://github.com/dcastil)) We utilize its
