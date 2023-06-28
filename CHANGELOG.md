@@ -1,5 +1,11 @@
 # tailant
 
+## 1.0.1
+
+### Patch Changes
+
+- 3f7aa11: Add README.md to package
+
 ## 1.0.0
 
 ### Major Changes
