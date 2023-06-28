@@ -1,0 +1,100 @@
+{
+  "name": "tailant",
+  "description": "A tiny utility for construction conditional CSS classes, with tailwind group variants and merging of identical classes",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "meluiz",
+    "email": "hi@meluiz.com",
+    "url": "https://meluiz.com"
+  },
+  "contributors": [
+    {
+      "name": "joaom00",
+      "url": "https://jpedromagalhaes.vercel.app/"
+    },
+    {
+      "name": "revogabe",
+      "url": "https://revogabe.vercel.app/"
+    }
+  ],
+  "source": "./src/index.ts",
+  "module": "./dist/index.mjs",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "package.json"
+  ],
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs",
+    "default": "./dist/index.mjs"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "css",
+    "classes",
+    "classname",
+    "classlist",
+    "merge",
+    "conflict",
+    "override",
+    "variant",
+    "groups",
+    "props"
+  ],
+  "tags": [
+    "tailwind",
+    "tailwindcss",
+    "css",
+    "classes",
+    "classname",
+    "classlist",
+    "merge",
+    "conflict",
+    "override",
+    "variant",
+    "groups",
+    "props"
+  ],
+  "engines": {
+    "node": ">=16.15.0",
+    "npm": ">=8"
+  },
+  "homepage": "https://github.com/meluiz/tailant#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meluiz/tailant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meluiz/tailant/issues"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "format": "prettier --write .",
+    "release": "changeset publish",
+    "release:dev": "changeset version --snapshot dev && changeset publish --tag dev"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.2",
+    "@vitest/ui": "^0.32.2",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.5",
+    "vitest": "^0.32.2"
+  }
+}
