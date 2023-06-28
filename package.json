@@ -81,7 +81,7 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "format": "prettier --write .",
-    "ci:publish": "pnpm publish -r",
+    "ci:publish": "pnpm build && changeset publish",
     "release": "changeset publish",
     "release:dev": "changeset version --snapshot dev && changeset publish --tag dev"
   },
