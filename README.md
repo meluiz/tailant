@@ -25,6 +25,52 @@
 - Fully typed
 - Framework agnostic
 
+## Usage
+
+Tailant offers the css function, which provides several features:
+
+1. **Conditional classes**
+
+   Use it to apply classes conditionally.
+
+   ```js
+   import { css } from "tailant"
+
+   // String
+   const classes = css("text-black text-sm", true && "visible", "italic")
+   // → "text-black text-sm visible italic"
+
+   // Object
+   const classes = css({ "px-4 py-2": true, italic: false, "bg-white": true });
+   // → 'px-4 py-4 bg-white'
+
+   // Array
+   const classes = css(["bg-blue-600 focus:outline-none", false, true && "text-white"]);
+   // → "bg-blue-600 focus:outline-none text-white"
+   ```
+
+2. **Class merging**
+
+   Merge your identical classes to avoid potential conflicts.
+
+   ```js
+   import { css } from "tailant"
+
+   const classes = css("w-full px-4 py-2 rounded-xs text-white", "w-auto rounded-[3px]")
+   // → "px-4 py-2 text-white w-auto rounded-[3px]"
+   ```
+
+3. **Variant Groups**
+
+   Apply utilities for the same variant by grouping them with a parenthesis.
+
+   ```js
+   import { css } from "tailant"
+
+   const classes = css("hover:(bg-white/90) focus-visible:(outline-none ring-2 ring-ring ring-offset-2)")
+   // → "hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+   ```
+
 ## Quick Start
 
 1. To use Tailant in your project, you can install it as a dependency:
