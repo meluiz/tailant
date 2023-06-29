@@ -27,7 +27,7 @@
 
 ## Quick Start
 
-1. Installation: To use Tailant in your project, you can install it as a dependency:
+1. To use Tailant in your project, you can install it as a dependency:
 
 ```bash
 # npm
@@ -40,9 +40,7 @@ yarn add tailant
 pnpm add tailant
 ```
 
-## Quick Start
-
-1. You need to add the **Tailant** `wrapper` to your TailwindCSS configuration file `tailwind.config.js`:
+2. You need to add the **Tailant** `wrapper` to your TailwindCSS configuration file `tailwind.config.js`:
 
 ```js
 // tailwind.config.js
@@ -63,7 +61,7 @@ module.exports = withTailant({
     If you're wondering why you need to add the transformer, it's because TailwindCSS uses something called [JIT](https://tailwindcss.com/blog/tailwindcss-v3#just-in-time-all-the-time) (Just-In-Time) that compiles your CSS on-demand based on the classes you use in your HTML/JSX/etc. files. Some functionalities are specific to Tailant, the JIT compiler doesn't know which classes to compile. That's why we need to add the transformer to inform the compiler which classes to include in the compilation process. This ensures that the unique features provided by Tailant are properly recognized and compiled by the JIT compiler.
   </details>
 
-2. After adding it, you can call the `css` function to use Tailant's features:
+3. After adding it, you can call the `css` function to use Tailant's features:
 
 ```js
 import { css } from 'tailwant'
