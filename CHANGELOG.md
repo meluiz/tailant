@@ -1,5 +1,11 @@
 # tailant
 
+## 1.0.2
+
+### Patch Changes
+
+- 4f1b15c: Update Readme
+
 ## 1.0.1
 
 ### Patch Changes
