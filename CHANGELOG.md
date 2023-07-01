@@ -1,5 +1,12 @@
 # tailant
 
+## 1.0.3
+
+### Patch Changes
+
+- 3b04f80: fix(process-variant-groups.ts): update variantGroupRegex to match variant groups with any characters inside
+  the parentheses instead of only lowercase letters
+
 ## 1.0.2
 
 ### Patch Changes
