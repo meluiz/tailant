@@ -130,3 +130,17 @@ export function isTransformerFunction(param: unknown): param is TransformerFn {
 
   return false
 }
+
+/**
+ * Checks if the given parameter is a space.
+ *
+ * @param {unknown} param - The parameter to check.
+ * @return {boolean} Returns true if the parameter is a space, otherwise false.
+ */
+export function isSpace(param: unknown): param is boolean {
+  if (isString(param)) {
+    return /^\s*$/.test(param)
+  }
+
+  return false
+}
