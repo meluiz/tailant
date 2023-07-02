@@ -58,7 +58,7 @@ module.exports = withTailant({
 
   <details>
     <summary>Why do I need to add the transformer?</summary>
-    If you're wondering why you need to add the transformer, it's because TailwindCSS uses something called [JIT](https://tailwindcss.com/blog/tailwindcss-v3#just-in-time-all-the-time) (Just-In-Time) that compiles your CSS on-demand based on the classes you use in your HTML/JSX/etc. files. Some functionalities are specific to Tailant, the JIT compiler doesn't know which classes to compile. That's why we need to add the transformer to inform the compiler which classes to include in the compilation process. This ensures that the unique features provided by Tailant are properly recognized and compiled by the JIT compiler.
+    If you're wondering why you need to add the transformer, it's because TailwindCSS uses something called <a href="https://tailwindcss.com/blog/tailwindcss-v3#just-in-time-all-the-time" target="_blank">JIT</a> (Just-In-Time) that compiles your CSS on-demand based on the classes you use in your HTML/JSX/etc. files. Some functionalities are specific to Tailant, the JIT compiler doesn't know which classes to compile. That's why we need to add the transformer to inform the compiler which classes to include in the compilation process. This ensures that the unique features provided by Tailant are properly recognized and compiled by the JIT compiler.
   </details>
 
 3. After adding it, you can call the `css` function to use Tailant's features:
@@ -106,18 +106,18 @@ Tailant offers the css function, which provides several features:
    Use it to apply classes conditionally.
 
    ```js
-   import { css } from "tailant"
+   import { css } from 'tailant'
 
    // String
-   const classes = css("text-black text-sm", true && "visible", "italic")
+   const classes = css('text-black text-sm', true && 'visible', 'italic')
    // → "text-black text-sm visible italic"
 
    // Object
-   const classes = css({ "px-4 py-2": true, italic: false, "bg-white": true });
+   const classes = css({ 'px-4 py-2': true, italic: false, 'bg-white': true })
    // → 'px-4 py-4 bg-white'
 
    // Array
-   const classes = css(["bg-blue-600 focus:outline-none", false, true && "text-white"]);
+   const classes = css(['bg-blue-600 focus:outline-none', false, true && 'text-white'])
    // → "bg-blue-600 focus:outline-none text-white"
    ```
 
@@ -126,9 +126,9 @@ Tailant offers the css function, which provides several features:
    Merge your identical classes to avoid potential conflicts.
 
    ```js
-   import { css } from "tailant"
+   import { css } from 'tailant'
 
-   const classes = css("w-full px-4 py-2 rounded-xs text-white", "w-auto rounded-[3px]")
+   const classes = css('w-full px-4 py-2 rounded-xs text-white', 'w-auto rounded-[3px]')
    // → "px-4 py-2 text-white w-auto rounded-[3px]"
    ```
 
@@ -137,9 +137,9 @@ Tailant offers the css function, which provides several features:
    Apply utilities for the same variant by grouping them with a parenthesis.
 
    ```js
-   import { css } from "tailant"
+   import { css } from 'tailant'
 
-   const classes = css("hover:(bg-white/90) focus-visible:(outline-none ring-2 ring-ring ring-offset-2)")
+   const classes = css('hover:(bg-white/90) focus-visible:(outline-none ring-2 ring-ring ring-offset-2)')
    // → "hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
    ```
 
