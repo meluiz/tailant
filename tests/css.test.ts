@@ -1,4 +1,4 @@
-import { test, expect, describe, it } from 'vitest'
+import { expect, describe, it } from 'vitest'
 import { css } from '../src'
 
 describe('It make some tests about tailwind functionality', () => {
