@@ -3,7 +3,7 @@ import type { Config } from 'tailwindcss'
 
 import resolveConfig from 'tailwindcss/resolveConfig'
 
-import { isArray, isEmpty, isFunction, isObject, isRawFile, isTransformerFunction } from './utils'
+import { isArray, isEmpty, isFunction, isObject, isRawFile, isTransformerFunction } from './utils/tools'
 import { processVariantGroups } from './process-variant-groups'
 
 /**
