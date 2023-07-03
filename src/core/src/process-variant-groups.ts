@@ -6,7 +6,7 @@
  */
 export function processVariantGroups(input: string): string {
   // regex to match variant groups of the form "variant:(class class)"
-  const variantGroupRegex = /([a-z]+:)\((.+)\)/g
+  const variantGroupRegex = /([a-z]+:)\(([^)]+)\)/g
   // find all variant groups in the input string
   const variantGroups = Array.from(input.matchAll(variantGroupRegex))
 
