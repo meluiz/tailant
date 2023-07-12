@@ -4,7 +4,7 @@ import type { Config } from 'tailwindcss'
 import resolveConfig from 'tailwindcss/resolveConfig'
 
 import { isArray, isEmpty, isFunction, isObject, isRawFile, isTransformerFunction } from './utils/tools'
-import { processVariantGroups } from './process-variant-groups'
+import { Processor } from './lib'
 
 /**
  * Returns a function that applies a list of TransformerFns to a given input
@@ -83,13 +83,13 @@ export function withTailant(input: Config) {
   }
 
   /**
-   * Transforms the given string content by processing variant groups.
+   * Transforms the given content using the Processor transformer.
    *
-   * @param {string} content - the string to be transformed
-   * @return {unknown} the result of the processed variant groups
+   * @param {string} content - The content to be transformed.
+   * @return {unknown} The transformed content.
    */
   const transformer = (content: string) => {
-    return processVariantGroups(content)
+    return Processor.transformer(content)
   }
 
   // If there is no custom transform function, use the default transformer for all file extensions

@@ -10,7 +10,7 @@ export class Processor {
    * @param {string} content - The input string content to transform.
    * @returns {any[]} - The result of parsing the classes.
    */
-  static transformer(content: string): any[] {
+  static transformer(content: string): string {
     // Create a new instance of VariantGroupsParser and pass in the content
     const variant = new VariantGroupsParser(content)
 
