@@ -18,10 +18,6 @@
   </a>
 </p>
 
-## Warning
-
-#### We do not recommend using this function in production projects. It is still under development, so there may be minor bugs occurring in the project.
-
 ## Features
 
 - Supports Tailwind v3.0 up to v3.3
