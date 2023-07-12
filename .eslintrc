@@ -5,6 +5,7 @@
     "node": true,
     "jest": true
   },
+  "parser": "@typescript-eslint/parser",
   "rules": {
     "comma-dangle": [
       "error",
