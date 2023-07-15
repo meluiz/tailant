@@ -1,5 +1,12 @@
 # tailant
 
+## 1.1.1
+
+### Patch Changes
+
+- e1133e9: chore(package.json): update tailwindcss dependency version to 3.2.7 chore(package.json): remove specific
+  version requirement for tailwindcss in peerDependencies
+
 ## 1.1.0
 
 ### Minor Changes
