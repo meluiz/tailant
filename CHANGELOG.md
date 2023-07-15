@@ -1,5 +1,11 @@
 # tailant
 
+## 1.1.2
+
+### Patch Changes
+
+- ec05a05: fix(ClassParse): remove unnecessary checks in ClassParser class
+
 ## 1.1.1
 
 ### Patch Changes
