@@ -15,20 +15,23 @@ export class ClassParser {
    * Returns the polished content.
    */
   private polishingVariantGroups(): string {
-    // Check if content and groups exist
-    if (!this.content || this.groups.length === 0) {
+    // Check if content exists
+    if (!this.content) {
       return ''
     }
 
-    // Iterate over each group
-    for (const group of this.groups) {
-      const { raw, variant, classes } = group
+    // Check if there are any groups
+    if (this.groups.length) {
+      // Iterate over each group
+      for (const group of this.groups) {
+        const { raw, variant, classes } = group
 
-      // Generate class names for the group
-      const classNames = classes.map((classe) => `${variant}:${classe}`).join(' ')
+        // Generate class names for the group
+        const classNames = classes.map((classe) => `${variant}:${classe}`).join(' ')
 
-      // Replace raw content with class names
-      this.content = this.content.replace(raw, classNames)
+        // Replace raw content with class names
+        this.content = this.content.replace(raw, classNames)
+      }
     }
 
     return this.content
@@ -37,17 +40,17 @@ export class ClassParser {
   /**
    * Parses the content of the class and returns the polished variant groups.
    *
-   * @returns The polished variant groups as a string.
+   * @returns {string} The polished variant groups as a string.
    */
   public parse(): string {
-    // Check if the content or groups are empty
-    if (!this.content || !this.groups.length) {
+    // Check if the content is empty
+    if (!this.content) {
       return ''
     }
 
     // Polishing the variant groups
-    const content = this.polishingVariantGroups()
+    const polishedContent = this.polishingVariantGroups()
 
-    return content
+    return polishedContent
   }
 }
