@@ -1,8 +1,6 @@
 <p align="center">
-  <a href="https://tailwind-variants.org">
-    <img width="20%" src=".github/assets/isotipo.png" alt="Tailant" />
-    <h1 align="center">Tailant</h1>
-  </a>
+  <img width="20%" src=".github/assets/isotipo.png" alt="Tailant" />
+  <h1 align="center">Tailant</h1>
 </p>
 
 <p align="center">
